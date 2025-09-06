@@ -1,0 +1,111 @@
+.wrapper {
+    flex-grow: 1;
+    padding: 32px;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-shrink: 0;
+  }
+  
+  .title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1f2937;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    background-color: white;
+    color: #374151;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .button:hover {
+    background-color: #f9fafb;
+  }
+  
+  .button.primary {
+    background-color: #16a34a;
+    color: white;
+    border-color: #16a34a;
+  }
+  
+  .button.primary:hover {
+    background-color: #22c55e;
+  }
+  
+  .content {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  
+  .searchBarContainer {
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+    flex-shrink: 0;
+  }
+  
+  .searchInput {
+    width: 33.33%;
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+  }
+  
+  .tableContainer {
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+  
+  .table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse; 
+  }
+  
+  .table th,
+  .table td {
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .table th {
+    background-color: #f9fafb;
+    color: #6b7280;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .table td {
+    color: #374151;
+  }
+  
+  

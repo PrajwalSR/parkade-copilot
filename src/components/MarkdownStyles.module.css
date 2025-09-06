@@ -1,0 +1,20 @@
+/* Styles for our rendered Markdown content */
+.markdownContainer p {
+    margin-top: 0;
+    margin-bottom: 8px; /* Adds space between paragraphs */
+  }
+  
+  .markdownContainer ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  
+  .markdownContainer li {
+    margin-bottom: 4px;
+  }
+  
+  .markdownContainer strong {
+    font-weight: 600;
+  }

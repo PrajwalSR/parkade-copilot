@@ -1,0 +1,151 @@
+.chatWindow {
+    position: fixed;
+    bottom: 96px; /* 80px bubble height + 16px spacing */
+    right: 32px;
+    width: 384px; /* 24rem */
+    height: 600px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    border: 1px solid #e5e7eb; /* light gray border */
+    overflow: hidden; /* Ensures child elements conform to rounded corners */
+  }
+  
+  .header {
+    background-color: #16a34a; /* Parkade Green */
+    color: white;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 1.125rem; /* 18px */
+    font-weight: 600;
+  }
+  
+  .closeButton {
+    background: none;
+    border: none;
+    color: white;
+    padding: 4px;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .closeButton:hover {
+    background-color: #22c55e; /* Lighter Green */
+  }
+  
+  .messageArea {
+    flex-grow: 1; /* Takes up all available space */
+    padding: 16px;
+    overflow-y: auto; /* Allows scrolling for messages */
+    background-color: #f9fafb; /* Very light gray */
+  }
+  
+  .placeholderText {
+    color: #6b7280; /* Medium gray */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .inputArea {
+    padding: 16px;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between input and button */
+    background-color: white;
+  }
+  
+  .textInput {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db; /* Gray border */
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .textInput:focus {
+    outline: none;
+    border-color: #16a34a;
+    box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.3);
+  }
+  
+  .sendButton {
+    background-color: #16a34a;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+  }
+  
+  .sendButton:hover {
+    background-color: #22c55e;
+  }
+  
+/* --- ADD THESE NEW STYLES TO THE BOTTOM OF THE FILE --- */
+
+.messageArea {
+  flex-grow: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column; /* This is important for message alignment */
+}
+
+.message {
+  padding: 10px 15px;
+  border-radius: 18px;
+  max-width: 80%;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  word-wrap: break-word; /* Prevents long words from overflowing */
+}
+
+.user {
+  background-color: #16a34a; /* Parkade Green */
+  color: white;
+  align-self: flex-end; /* Aligns user messages to the right */
+  border-bottom-right-radius: 4px;
+}
+
+.ai {
+  background-color: #e5e7eb; /* Light gray */
+  color: #1f2937;
+  align-self: flex-start; /* Aligns AI messages to the left */
+  border-bottom-left-radius: 4px;
+}
+
+.loadingDots span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #6b7280;
+  border-radius: 50%;
+  margin: 0 2px;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.loadingDots span:nth-child(1) { animation-delay: -0.32s; }
+.loadingDots span:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes bounce {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1.0); }
+}
+

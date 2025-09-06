@@ -1,0 +1,112 @@
+.wrapper {
+    flex-grow: 1; /* Makes this component take up the remaining space */
+    padding: 32px;
+    background-color: #f9fafb; /* A very light gray, almost white */
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh; /* Ensures the wrapper doesn't exceed screen height */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-shrink: 0; /* Prevents the header from shrinking */
+  }
+  
+  .title {
+    font-size: 1.875rem; /* 30px */
+    font-weight: 700;
+    color: #1f2937; /* Dark gray */
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between buttons */
+  }
+  
+  .button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db; /* Gray border */
+    background-color: white;
+    color: #374151;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .button:hover {
+    background-color: #f9fafb;
+  }
+  
+  .button.primary {
+    background-color: #16a34a; /* Parkade Green */
+    color: white;
+    border-color: #16a34a;
+  }
+  
+  .button.primary:hover {
+    background-color: #22c55e; /* Lighter Green */
+  }
+  
+  .content {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allows the content to fill available space */
+    overflow: hidden; /* Important for the scrolling container inside */
+  }
+  
+  .searchBarContainer {
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+    flex-shrink: 0; /* Prevents this from shrinking */
+  }
+  
+  .searchInput {
+    width: 33.33%;
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+  }
+  
+  /* This is the new container that enables scrolling */
+  .tableContainer {
+    overflow-y: auto; /* The magic for vertical scrolling */
+    flex-grow: 1;
+  }
+  
+  .table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse; 
+  }
+  
+  .table th,
+  .table td {
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .table th {
+    background-color: #f9fafb;
+    color: #6b7280;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: sticky; /* Makes the header stay at the top */
+    top: 0;
+    cursor: pointer; /* Indicates it's clickable for sorting */
+    user-select: none; /* Prevents text selection on click */
+  }
+  
+  .table td {
+    color: #374151;
+  }
+  
+  

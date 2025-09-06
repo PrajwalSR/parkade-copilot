@@ -21,9 +21,3 @@ While the current version is a fully functional demo, here are some features I p
 * **User Authentication:** Add a login system for property managers to ensure data is secure.
 * **Advanced AI Agent:** Implement the "Router-Executor" pattern in the n8n workflow to make the AI more efficient and capable of handling even more complex, multi-step queries.
 * **Data Visualization:** Add a dedicated "Dashboard" view with charts and graphs to visualize key metrics like monthly revenue and spot occupancy rates.# parkade-copilot
-# parkade-copilot
-# parkade-copilot
-# parkade-copilot
-# parkade-copilot
-# parkade-copilot
-# parkade-copilot
